@@ -14,7 +14,7 @@ type User = {
   password: string;
 }
 
-function createOrUpdateUser(initialValues: Partial<Pick<User, 'name' | 'surname'>> & Pick<User, 'email' | 'password'>): {}{
+function createOrUpdateUser(initialValues: Partial<User>): User | Partial<User> {
 return initialValues
 }
 
